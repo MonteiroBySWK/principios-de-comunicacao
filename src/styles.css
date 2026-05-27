@@ -153,12 +153,12 @@ body {
   }
 
   :root {
-    color-scheme: light;
+    color-scheme: dark;
   }
 
   body {
-    background: #ffffff;
-    color: #111111;
+    background: var(--page-bg);
+    color: var(--text-main);
   }
 
   html,
