@@ -19,9 +19,30 @@
       ]
     },
     {
-      "eyebrow": "Metodologia",
-      "title": "Como organizar cada slide",
-      "text": "Use um titulo direto, um ponto principal e suporte visual. Evite excesso de texto e mantenha um ritmo consistente."
+      "eyebrow": "Contexto",
+      "title": "A mensagem muda com o publico",
+      "text": "Antes de comunicar, defina quem vai receber, o nivel de conhecimento e o objetivo final. Contexto correto reduz retrabalho.",
+      "layout": "two-column",
+      "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "eyebrow": "Canal",
+      "title": "Escolha o formato certo",
+      "bullets": [
+        "Reuniao: alinhamento rapido",
+        "Documento: decisao registrada",
+        "Mensagem curta: urgencia",
+        "Visual: facilitar entendimento"
+      ],
+      "layout": "two-column",
+      "image": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "eyebrow": "Ruido",
+      "title": "Evite interferencias",
+      "text": "Ruido pode ser tecnicismo, excesso de detalhes ou falta de foco. Corte o que nao serve para a decisao.",
+      "layout": "two-column",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
     },
     {
       "eyebrow": "Encerramento",

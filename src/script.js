@@ -1,10 +1,5 @@
 const deck = document.getElementById("deck");
 const statusEl = document.getElementById("status");
-const navCounter = document.getElementById("nav-counter");
-const navButtons = document.querySelectorAll("[data-dir]");
-
-let slideElements = [];
-let currentIndex = 0;
 const baseUrl = import.meta.env.BASE_URL || "/";
 const dataUrl = new URL("data/slides.json", baseUrl).toString();
 
@@ -43,28 +38,6 @@ const createMedia = (image) => {
 const setStatus = (message) => {
   if (!statusEl) return;
   statusEl.textContent = message;
-};
-
-const updateCounter = () => {
-  if (!navCounter) return;
-  navCounter.textContent = `${currentIndex + 1} / ${slideElements.length}`;
-};
-
-const activateSlide = (nextIndex, shouldScroll = true) => {
-  if (!slideElements.length) return;
-  if (nextIndex < 0 || nextIndex >= slideElements.length) return;
-
-  slideElements[currentIndex].classList.remove("slide--active");
-  currentIndex = nextIndex;
-  const active = slideElements[currentIndex];
-  active.classList.add("slide--active");
-  updateCounter();
-
-  if (shouldScroll) {
-    active.scrollIntoView({ behavior: "smooth", block: "center" });
-  }
-
-  history.replaceState(null, "", `#${active.id}`);
 };
 
 const buildSlide = (slide, index, total, deckFooter) => {
@@ -138,10 +111,7 @@ const loadSlides = async () => {
       const section = buildSlide(slide, index, slides.length, payload.footer);
       deck.appendChild(section);
     });
-
-    slideElements = Array.from(deck.querySelectorAll(".slide"));
     setStatus("");
-    activateFromHash();
   } catch (error) {
     console.error(error);
     setStatus(
@@ -150,36 +120,4 @@ const loadSlides = async () => {
   }
 };
 
-const activateFromHash = () => {
-  const hash = window.location.hash.replace("#", "");
-  const index = slideElements.findIndex((slide) => slide.id === hash);
-  slideElements.forEach((slide) => slide.classList.remove("slide--active"));
-  currentIndex = index >= 0 ? index : 0;
-  if (slideElements[currentIndex]) {
-    slideElements[currentIndex].classList.add("slide--active");
-  }
-  updateCounter();
-};
-
-const handleNav = (direction) => {
-  const delta = direction === "next" ? 1 : -1;
-  activateSlide(currentIndex + delta);
-};
-
-navButtons.forEach((button) => {
-  button.addEventListener("click", () => handleNav(button.dataset.dir));
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "ArrowRight" || event.key === "PageDown") {
-    event.preventDefault();
-    handleNav("next");
-  }
-  if (event.key === "ArrowLeft" || event.key === "PageUp") {
-    event.preventDefault();
-    handleNav("prev");
-  }
-});
-
-window.addEventListener("hashchange", activateFromHash);
 loadSlides();
