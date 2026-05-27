@@ -1,0 +1,36 @@
+{
+  "title": "Principios de comunicacao",
+  "subtitle": "Deck inicial",
+  "footer": "Principios de comunicacao",
+  "slides": [
+    {
+      "eyebrow": "Capa",
+      "title": "Principios de comunicacao",
+      "subtitle": "Estrutura base para o deck"
+    },
+    {
+      "eyebrow": "Objetivo",
+      "title": "O que vamos cobrir",
+      "bullets": [
+        "Clareza: mensagem simples e direta",
+        "Contexto: quem recebe, onde, quando",
+        "Canal: escolha do meio e formato",
+        "Ruido: reducao de interferencias"
+      ]
+    },
+    {
+      "eyebrow": "Metodologia",
+      "title": "Como organizar cada slide",
+      "text": "Use um titulo direto, um ponto principal e suporte visual. Evite excesso de texto e mantenha um ritmo consistente."
+    },
+    {
+      "eyebrow": "Encerramento",
+      "title": "Proximos passos",
+      "bullets": [
+        "Definir o tema especifico",
+        "Revisar tom e publico-alvo",
+        "Adicionar exemplos e imagens"
+      ]
+    }
+  ]
+}

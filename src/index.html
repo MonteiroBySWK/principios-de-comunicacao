@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Principios de comunicacao</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="page__header">
+        <div>
+          <p class="page__eyebrow">Deck base</p>
+          <h1 class="page__title">Principios de comunicacao</h1>
+          <p class="page__subtitle">Estrutura inicial para web e PDF</p>
+        </div>
+        <div class="page__meta">
+          <span class="page__meta-label">Formato</span>
+          <span class="page__meta-value">16:9 / exportacao para PDF</span>
+        </div>
+      </header>
+
+      <p id="status" class="status">Carregando slides...</p>
+      <section id="deck" class="deck" aria-live="polite"></section>
+    </main>
+
+    <nav class="nav" aria-label="Navegacao do deck">
+      <button type="button" class="nav__button" data-dir="prev">Anterior</button>
+      <span class="nav__counter" id="nav-counter">0 / 0</span>
+      <button type="button" class="nav__button" data-dir="next">Proximo</button>
+    </nav>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
