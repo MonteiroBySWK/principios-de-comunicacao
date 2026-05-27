@@ -1,12 +1,12 @@
 {
   "title": "Principios de comunicacao",
-  "subtitle": "Mock de conteudo",
-  "footer": "Principios de comunicacao",
+  "subtitle": "Sinais e telecomunicacoes",
+  "footer": "Principios de Comunicacoes",
   "slides": [
     {
       "eyebrow": "Apresentacao",
-      "title": "Comunicacao eficaz em equipes",
-      "subtitle": "Principios de Comunicacoes",
+      "title": "Principios de comunicacoes",
+      "subtitle": "Sinais e telecomunicacoes",
       "text": "Integrantes:",
       "bullets": [
         "Gabriel",
@@ -16,91 +16,50 @@
     },
     {
       "eyebrow": "Agenda",
-      "title": "O que vamos ver",
+      "title": "Fundamentos do sistema de comunicacao",
       "bullets": [
-        "Clareza na mensagem",
-        "Contexto e publico",
-        "Escolha do canal",
-        "Reducao de ruido",
-        "Modelo de estrutura"
+        "Sinal de informacao",
+        "Modulacao",
+        "Canal e ruido",
+        "Largura de banda",
+        "Desempenho e limites"
       ]
     },
     {
-      "eyebrow": "Clareza",
-      "title": "Uma ideia por slide",
-      "text": "A mensagem principal precisa caber em uma frase. Detalhes extras entram como suporte visual ou notas.",
+      "eyebrow": "Sinais",
+      "title": "Analogico vs digital",
+      "text": "Sinais analogicos sao continuos no tempo; sinais digitais sao amostrados e quantizados.",
       "layout": "two-column",
-      "image": "https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=1200&q=80"
+      "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
     },
     {
-      "eyebrow": "Contexto",
-      "title": "Adapte o tom para o publico",
+      "eyebrow": "Modulacao",
+      "title": "Transporte da informacao",
       "bullets": [
-        "Senioridade da audiencia",
-        "Nivel tecnico esperado",
-        "Tempo disponivel",
-        "Decisao que precisa acontecer"
+        "AM/FM: variacao de amplitude ou frequencia",
+        "PSK/QAM: variacao de fase e amplitude",
+        "Objetivo: alcance e eficiencia espectral"
       ],
       "layout": "two-column",
-      "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
     },
     {
-      "eyebrow": "Canal",
-      "title": "Escolha o formato certo",
+      "eyebrow": "Canal e ruido",
+      "title": "Degradacao do sinal",
+      "text": "A relacao sinal-ruido (SNR) define a qualidade. Interferencias e atenuacao afetam o receptor.",
+      "layout": "two-column",
+      "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "eyebrow": "Limites",
+      "title": "Largura de banda e capacidade",
       "bullets": [
-        "Reuniao: alinhamento rapido",
-        "Documento: decisao registrada",
-        "Mensagem curta: urgencia",
-        "Visual: facilitar entendimento"
+        "Nyquist: taxa maxima sem interferencia",
+        "Shannon: capacidade teorica do canal",
+        "BER: taxa de erro de bits"
       ],
       "layout": "two-column",
-      "image": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80"
-    },
-    {
-      "eyebrow": "Ruido",
-      "title": "Remova o que nao ajuda",
-      "text": "Ruido pode ser tecnicismo, excesso de detalhes ou falta de foco. Simplificar reduz retrabalho.",
-      "layout": "two-column",
-      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
-    },
-    {
-      "eyebrow": "Modelo",
-      "title": "Estrutura recomendada",
-      "bullets": [
-        "Problema: o que precisa mudar",
-        "Impacto: por que importa agora",
-        "Proposta: o que fazer",
-        "Proximo passo: quem decide"
-      ],
-      "layout": "two-column",
-      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
-    },
-    {
-      "eyebrow": "Exemplo",
-      "title": "Antes e depois",
-      "text": "Antes: 'Vamos melhorar a comunicacao'. Depois: 'Em 2 semanas, enviaremos um resumo semanal com decisões e riscos'.",
-      "layout": "two-column",
-      "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
-    },
-    {
-      "eyebrow": "Checklist",
-      "title": "Valide antes de enviar",
-      "bullets": [
-        "Mensagem principal esta clara?",
-        "O publico tem contexto suficiente?",
-        "Existe uma chamada para acao?",
-        "O visual reforca a ideia?"
-      ]
-    },
-    {
-      "eyebrow": "Encerramento",
-      "title": "Proximos passos",
-      "bullets": [
-        "Definir o tema especifico",
-        "Coletar exemplos reais",
-        "Inserir dados e resultados",
-        "Revisar linguagem"
-      ]
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
     }
   ]
 }

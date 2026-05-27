@@ -1,7 +1,8 @@
 const deck = document.getElementById("deck");
 const statusEl = document.getElementById("status");
-const baseUrl = import.meta.env.BASE_URL || "/";
-const dataUrl = new URL("data/slides.json", baseUrl).toString();
+const basePath = import.meta.env.BASE_URL || "/";
+const normalizedBase = basePath.endsWith("/") ? basePath : `${basePath}/`;
+const dataUrl = `${window.location.origin}${normalizedBase}data/slides.json`;
 
 const createText = (text, className, tag = "p") => {
   if (!text) return null;
