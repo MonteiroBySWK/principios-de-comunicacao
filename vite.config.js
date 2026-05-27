@@ -2,14 +2,12 @@ const { defineConfig } = require("vite");
 
 module.exports = defineConfig({
   base: process.env.BASE_URL || "/",
+  root: "src",
   server: {
-    open: "/src/index.html",
+    open: "/",
   },
   build: {
-    outDir: "dist",
+    outDir: "../dist",
     emptyOutDir: true,
-    rollupOptions: {
-      input: "src/index.html",
-    },
   },
 });

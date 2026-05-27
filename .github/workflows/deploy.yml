@@ -31,7 +31,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          BASE_URL: /
+          BASE_URL: /principios-de-comunicacao/
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
