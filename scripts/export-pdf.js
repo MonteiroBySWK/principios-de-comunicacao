@@ -67,11 +67,15 @@ const exportPdf = async () => {
   const browser = await puppeteer.launch({ headless: "new" });
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: "networkidle0" });
-  await page.emulateMediaType("print");
+  await page.emulateMediaType("screen");
+  await page.setViewport({ width: 1280, height: 720, deviceScaleFactor: 2 });
   await page.pdf({
     path: OUTPUT_PATH,
+    width: "1280px",
+    height: "720px",
+    margin: { top: "0", right: "0", bottom: "0", left: "0" },
     printBackground: true,
-    preferCSSPageSize: true,
+    preferCSSPageSize: false,
   });
 
   await browser.close();
