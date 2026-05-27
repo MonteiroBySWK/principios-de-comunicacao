@@ -71,6 +71,24 @@ const exportPdf = async () => {
   await page.emulateMediaType("screen");
   await page.evaluate(() => {
     document.body.classList.add("pdf-export");
+    document.querySelectorAll("img").forEach((img) => {
+      img.loading = "eager";
+      img.decoding = "sync";
+    });
+  });
+  await page.evaluate(async () => {
+    const images = Array.from(document.images);
+    await Promise.all(
+      images.map((img) =>
+        img.complete
+          ? Promise.resolve()
+          : new Promise((resolve) => {
+              const done = () => resolve();
+              img.addEventListener("load", done, { once: true });
+              img.addEventListener("error", done, { once: true });
+            })
+      )
+    );
   });
   await page.pdf({
     path: OUTPUT_PATH,
