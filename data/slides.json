@@ -1,65 +1,70 @@
 {
-  "title": "Principios de comunicacao",
-  "subtitle": "Sinais e telecomunicacoes",
-  "footer": "Principios de Comunicacoes",
+  "title": "Principios de comunicacoes",
+  "subtitle": "TA2: OFDM e OFDMA",
+  "footer": "UEMA - Principios de Comunicacao",
   "slides": [
     {
-      "eyebrow": "Apresentacao",
-      "title": "Principios de comunicacoes",
-      "subtitle": "Sinais e telecomunicacoes",
+      "eyebrow": "Capa",
+      "title": "TA2: OFDM e OFDMA",
+      "subtitle": "Principios de Comunicacao - Sinais e telecomunicacoes",
       "text": "Integrantes:",
       "bullets": [
-        "Gabriel",
-        "Marcos",
-        "Igor"
+        "Gabriel Silva Monteiro",
+        "Igor Barros Grilo",
+        "Marcos Vinicius Morais Rios"
       ]
     },
     {
       "eyebrow": "Agenda",
-      "title": "Fundamentos do sistema de comunicacao",
+      "title": "Topicos principais",
       "bullets": [
-        "Sinal de informacao",
-        "Modulacao",
-        "Canal e ruido",
-        "Largura de banda",
-        "Desempenho e limites"
+        "Multiplexacao em sistemas digitais",
+        "OFDM: funcionamento e ortogonalidade",
+        "OFDMA: multiusuario e alocacao",
+        "Comparacao e eficiencia espectral",
+        "Aplicacoes praticas"
       ]
     },
     {
-      "eyebrow": "Sinais",
-      "title": "Analogico vs digital",
-      "text": "Sinais analogicos sao continuos no tempo; sinais digitais sao amostrados e quantizados.",
+      "eyebrow": "OFDM",
+      "title": "Orthogonal Frequency-Division Multiplexing",
+      "text": "Usa subportadoras ortogonais via IFFT/FFT e prefixo ciclico para reduzir ISI.",
       "layout": "two-column",
-      "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80"
     },
     {
-      "eyebrow": "Modulacao",
-      "title": "Transporte da informacao",
+      "eyebrow": "OFDMA",
+      "title": "Orthogonal Frequency-Division Multiple Access",
       "bullets": [
-        "AM/FM: variacao de amplitude ou frequencia",
-        "PSK/QAM: variacao de fase e amplitude",
-        "Objetivo: alcance e eficiencia espectral"
+        "Divide subportadoras entre usuarios",
+        "Alocacao dinamica de recursos",
+        "Melhora eficiencia em redes moveis"
       ],
       "layout": "two-column",
-      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
     },
     {
-      "eyebrow": "Canal e ruido",
-      "title": "Degradacao do sinal",
-      "text": "A relacao sinal-ruido (SNR) define a qualidade. Interferencias e atenuacao afetam o receptor.",
+      "eyebrow": "Comparacao",
+      "title": "OFDM vs OFDMA",
+      "bullets": [
+        "OFDM: um usuario por transmissao",
+        "OFDMA: multiplos usuarios simultaneos",
+        "Complexidade maior no OFDMA",
+        "Eficiencia espectral superior"
+      ],
       "layout": "two-column",
       "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
     },
     {
-      "eyebrow": "Limites",
-      "title": "Largura de banda e capacidade",
+      "eyebrow": "Aplicacoes",
+      "title": "Onde aparece na pratica",
       "bullets": [
-        "Nyquist: taxa maxima sem interferencia",
-        "Shannon: capacidade teorica do canal",
-        "BER: taxa de erro de bits"
+        "Wi-Fi, DVB-T, LTE (OFDM)",
+        "LTE-Advanced, 5G, Wi-Fi 6 (OFDMA)",
+        "Redes moveis multiusuario"
       ],
       "layout": "two-column",
-      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
     }
   ]
 }
