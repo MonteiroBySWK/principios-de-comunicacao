@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && mkdir -p dist/data dist/assets && cp -r data/. dist/data && if [ -d assets ]; then cp -r assets/. dist/assets; fi",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "export:pdf": "node scripts/export-pdf.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/MonteiroBySWK/principios-de-comunicacao#readme",
   "devDependencies": {
+    "puppeteer": "^25.1.0",
     "vite": "^8.0.14"
   }
 }
