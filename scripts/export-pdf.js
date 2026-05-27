@@ -66,9 +66,12 @@ const exportPdf = async () => {
 
   const browser = await puppeteer.launch({ headless: "new" });
   const page = await browser.newPage();
+  await page.setViewport({ width: 1280, height: 720, deviceScaleFactor: 2 });
   await page.goto(url, { waitUntil: "networkidle0" });
   await page.emulateMediaType("screen");
-  await page.setViewport({ width: 1280, height: 720, deviceScaleFactor: 2 });
+  await page.evaluate(() => {
+    document.body.classList.add("pdf-export");
+  });
   await page.pdf({
     path: OUTPUT_PATH,
     width: "1280px",

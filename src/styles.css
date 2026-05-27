@@ -24,6 +24,9 @@ body {
   line-height: 1.4;
 }
 
+body.pdf-export {
+  background: var(--page-bg);
+}
 .page {
   padding: 40px 24px 120px;
 }
@@ -131,6 +134,23 @@ body {
   color: var(--text-main);
 }
 
+body.pdf-export .page {
+  padding: 0;
+}
+
+body.pdf-export .deck {
+  gap: 0;
+  align-items: stretch;
+}
+
+body.pdf-export .slide {
+  width: var(--slide-width);
+  height: var(--slide-height);
+  min-height: var(--slide-height);
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
 @media (max-width: 900px) {
   .slide {
     padding: 40px;
