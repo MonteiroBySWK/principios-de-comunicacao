@@ -1,5 +1,5 @@
 {
-  "name": "pricipios-de-comunicacao",
+  "name": "principios-de-comunicacao",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MonteiroBySWK/pricipios-de-comunicacao.git"
+    "url": "git+https://github.com/MonteiroBySWK/principios-de-comunicacao.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MonteiroBySWK/pricipios-de-comunicacao/issues"
+    "url": "https://github.com/MonteiroBySWK/principios-de-comunicacao/issues"
   },
-  "homepage": "https://github.com/MonteiroBySWK/pricipios-de-comunicacao#readme",
+  "homepage": "https://github.com/MonteiroBySWK/principios-de-comunicacao#readme",
   "devDependencies": {
     "vite": "^8.0.14"
   }
